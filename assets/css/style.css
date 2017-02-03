@@ -177,6 +177,43 @@ footer p {
 	font-size: 12px;
 }
 
+@media screen and (max-width: 980px) {
+	.wrapper {
+		width: 80%;
+	}
+
+	h1 {
+		font-size: 28px;
+	}
+
+	header {
+		height: 89px;
+	}
+
+	main {
+		width: calc(60% - 62px - 40px);
+	}
+
+	img.me {
+		width: 100%;
+		height: auto;
+		margin-right: 0;
+	}
+
+	aside {
+		width: calc(40% - 62px);
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	
+}
+
+@media screen and (max-width: 640px) {
+	
+}
+
 /* Portfolio Styles  Start*/
 
 .feature {
@@ -247,3 +284,5 @@ footer p {
     width: 100px;
     border: none;
 }
+
+
