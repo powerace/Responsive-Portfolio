@@ -28,6 +28,10 @@ h3 {
 	font-size: 19px;
 }
 
+p {
+	margin: 1rem 0;
+}
+
 h2:after {
 	content: "";
 	display: block;
@@ -188,6 +192,7 @@ footer p {
 
 	header {
 		height: 89px;
+		padding-top: 0;
 	}
 
 	main {
@@ -207,14 +212,66 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
-	
+	.wrapper {
+		width: 95%;
+	}
+
+	main, aside {
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	img.me {
+		width: 275px;
+		float: left;
+		margin-right: 20px;
+	}
+
+	.icon {
+		width: 63px;
+		margin-right: 10px;
+	}
 }
 
 @media screen and (max-width: 640px) {
-	
+	.wrapper {
+		width: 100%;
+	}
+
+	header {
+		height: auto;
+	}
+
+	h1, nav {
+		width: 100%;
+		float: none;
+	}
+
+	nav {
+		margin: 20px 0;
+	}
+
+	nav ul {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	nav ul li {
+		border-right: none;
+	}
+
+	section {
+		padding: 30px;
+	}
+
+	img.me {
+		width: 100%;
+		margin-right: 0;
+	}
+
 }
 
-/* Portfolio Styles  Start*/
+/* Portfolio Styles Start*/
 
 .feature {
 	width: 47%;
@@ -246,8 +303,15 @@ footer p {
 }
 
 .photo {
-	width: 275px;
-	height: 200px;
+	width: 100%;
+	height: auto;
+}
+
+@media screen and (max-width: 980px){
+	.feature {
+		width: 100%;
+		margin-right: 0;
+	}
 }
 
 /* Contact Styles Start*/
